@@ -2,10 +2,10 @@
 
 Electronics and software projects
 
-**Electronics:**.
-_**IOT**_.
-Garage Door Opener
+**Electronics:**  
+_**IOT**_  
+Garage Door Opener  
 
-**Software:**.
-_**WebAR**_.
-Bring restaurant menu to life
+**Software:**  
+_**WebAR**_  
+Bring restaurant menu to life  
