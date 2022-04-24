@@ -1,128 +1,53 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Bahman Bahmandeji GitHub Page</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
-  rel="stylesheet" 
-  integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
-  crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="utf-8">
+    <title>Bahman Bahmandeji GitHub Page</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-<div>
-  <nav class="navbar navbar-expand navbar-dark bg-dark">
-    <a href="#" class="navbar-brand">Bahmandeji Projects</a>
-    <div class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a href="about.html" class="nav-link">About</a>
-      </li>
-      <li class="nav-item">
-        <a href="projects.html" class="nav-link">Projects</a>
-      </li>
-      <li class="nav-item">
-        <a href="#" class="nav-link">Extra</a>
-      </li>      
-    </div>
-  </nav>
+    <div>
+        <nav class="navbar navbar-expand navbar-dark bg-dark">
+            <a href="#" class="navbar-brand">Bahmandeji Projects</a>
+            <div class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Extra</a>
+                </li>
+            </div>
+        </nav>
 
-  <div class="container mt-3">
+        <div class="container mt-3">
 
-<div class="container wrapper">
-    <div class="row">
-        <div class="col-md-4">
+            <div class="container wrapper">
+                <div class="row">
+                    <div class="col-md-4">
 
-            <div class="card card-container">
-                <img
-                id="profile-img"
-                src="//ssl.gstatic.com/accounts/ui/avatar_2x.png"
-                class="profile-img-card"
-                />
-                
-                <div class="submit-form">
-                <form name="form"
-                (ngSubmit)="f.form.valid && onSubmit()"
-                #f="ngForm"
-                novalidate>
-                    <div class="form-group top5 bottom5">
-                        <label for="username">User Name</label>
-                        <input
-                            type="text"
-                            class="form-control"
-                            id="username"
-                            required
-                            minlength="3"
-                            maxlength="20"
-                            [(ngModel)]="user.username"
-                            name="username"
-                            placeholder="User Name"
-                            #username="ngModel"
-                        />
-                        <div
-                            class="alert alert-danger"
-                            role="alert"
-                            *ngIf="username.errors && f.submitted"
-                        >
-                            Username is required!
+                        <div class="card card-container">
+                            <img id="profile-img"
+                                 src="//ssl.gstatic.com/accounts/ui/avatar_2x.png"
+                                 class="profile-img-card" />
+
+
                         </div>
                     </div>
-            
-                    <div class="form-group top5 bottom5">
-                        <label for="password">Password</label>
-                        <input
-                            type="password"
-                            class="form-control"
-                            id="password"
-                            required
-                            required
-                            minlength="6"            
-                            [(ngModel)]="user.password"
-                            name="password"
-                            placeholder="Password"
-                            #password="ngModel"
-                        />
-                        <div class="alert-danger" *ngIf="password.errors && f.submitted">
-                            <div *ngIf="password.errors['required']">Password is required</div>
-                            <div *ngIf="password.errors['minlength']">
-                                Password must be at least 6 characters
-                              </div>
-                        </div>
-                    </div>
-                <div class="form-group">
-                    <button class="btn btn-primary btn-block">Login</button>
-                </div>                    
-                    <!-- <div class="top5 bottom5">
-                        <button (click)="newLogin()" class="btn btn-success">Login</button>
-                    </div> -->
-                </form>
-                <div class="form-group">
-                    <div
-                    class="alert alert-danger"
-                    role="alert"
-                    *ngIf="isLoginFailed"
-                    >
-                    Login failed: {{ errorMessage }}
-                    </div>
-                </div>
-
-                <div class="alert alert-success" *ngIf="isLoggedIn">
-                    Logged in as {{ user.username }}.
-                </div>      
-
                 </div>
             </div>
-            
-
 
         </div>
     </div>
-</div>
-
-  </div>
-</div>
 </body>
 </html>
