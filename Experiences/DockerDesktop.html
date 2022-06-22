@@ -28,6 +28,14 @@
         ProjectName	C:\Users\[USERNAME]\.nuget\packages\microsoft.visualstudio.azure.containers.tools.targets\1.4.10\build\Container.targets	258	</br>
         Solution: ...</br>
         </br></br>
+        <b>Running Docker project with Visual Studio under .NET Core 2.1</b></br>
+        ERROR: microsoft/dotnet:2.1-aspnetcore-runtime  failed to create LLB definition
+        Solution: .NET Core 2.1 is old and has been removed from ducker, so point resource to mcr as below:
+        https://devblogs.microsoft.com/dotnet/net-core-2-1-container-images-will-be-deleted-from-docker-hub/
+        
+        from "FROM microsoft/dotnet:2.1-aspnetcore-runtime AS base" to "FROM mcr.microsoft.com/dotnet/aspnet:2.1 AS base"
+        from "FROM microsoft/dotnet:2.1-sdk AS build" to "FROM mcr.microsoft.com/dotnet/sdk:2.1 AS build"
+
         <b>Adding Ubuntu as a distro to WSL2 Docker in Windows 10 Professional</b></br>
         wsl.exe --set-version ubuntu 2</br>
         Error: The requested operation could not be completed due to a virtual disk system limitation. Virtual hard disk files must be uncompressed and unencrypted and must not be sparse.</br>
