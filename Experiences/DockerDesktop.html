@@ -1,15 +1,43 @@
-<b>Running Docker project with Visual Studio </b></br>
-Error: Severity	Code	Description	Project	File	Line	Suppression State</br>
-Error	CTC1001	Volume sharing is not enabled. On the Settings screen in Docker Desktop, click Shared Drives, and select the drive(s) containing your project files.	
-ProjectName	C:\Users\[USERNAME]\.nuget\packages\microsoft.visualstudio.azure.containers.tools.targets\1.4.10\build\Container.targets	258	</br>
-Solution: ...</br>
-</br></br>
-<b>Adding Ubuntu as a distro to WSL2 Docker in Windows 10 Professional</b></br>
-wsl.exe --set-version ubuntu 2</br>
-Error: The requested operation could not be completed due to a virtual disk system limitation. Virtual hard disk files must be uncompressed and unencrypted and must not be sparse.</br>
-Solution: go to C:\Users\YOUR_USER\AppData\Local\Packages\CanonicalGroupLimited...</br>
-Right click on LocalState -> Properties -> Advanced</br>
-Remove both checks from "Compress contents to save disk space" and "Encrypt contents to secure data"</br>
-Click Ok -> Apply</br>
-wsl.exe --set-version ubuntu 2</br>
-open Docker settings, Ubuntu should be added to your distro under Resources_WSL INTEGRATION</br>
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <meta charset="utf-8" />
+    <title>Experiences</title>
+    <base href="/">
+   <script>
+       $(function(){ $("head").load("head.html") });
+   </script>   
+</head>
+<body>
+    <!--Navigation bar-->
+    <div id="nav-placeholder">
+
+    </div>
+
+    <script>
+    $(function(){
+      $("#nav-placeholder").load("nav.html");
+    });
+    </script>
+    <!--end of Navigation bar-->
+    <b>Running Docker project with Visual Studio </b></br>
+    Error: Severity	Code	Description	Project	File	Line	Suppression State</br>
+    Error	CTC1001	Volume sharing is not enabled. On the Settings screen in Docker Desktop, click Shared Drives, and select the drive(s) containing your project files.	
+    ProjectName	C:\Users\[USERNAME]\.nuget\packages\microsoft.visualstudio.azure.containers.tools.targets\1.4.10\build\Container.targets	258	</br>
+    Solution: ...</br>
+    </br></br>
+    <b>Adding Ubuntu as a distro to WSL2 Docker in Windows 10 Professional</b></br>
+    wsl.exe --set-version ubuntu 2</br>
+    Error: The requested operation could not be completed due to a virtual disk system limitation. Virtual hard disk files must be uncompressed and unencrypted and must not be sparse.</br>
+    Solution: go to C:\Users\YOUR_USER\AppData\Local\Packages\CanonicalGroupLimited...</br>
+    Right click on LocalState -> Properties -> Advanced</br>
+    Remove both checks from "Compress contents to save disk space" and "Encrypt contents to secure data"</br>
+    Click Ok -> Apply</br>
+    wsl.exe --set-version ubuntu 2</br>
+    open Docker settings, Ubuntu should be added to your distro under Resources_WSL INTEGRATION</br>
+</body>
+</html>
+
+
+
