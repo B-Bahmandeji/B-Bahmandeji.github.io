@@ -1,4 +1,4 @@
-Adding Ubuntu as a distro to WSL2 Docker in Windows 10 Professional
+##Adding Ubuntu as a distro to WSL2 Docker in Windows 10 Professional
 wsl.exe --set-version ubuntu 2
 Error: The requested operation could not be completed due to a virtual disk system limitation.  Virtual hard disk files must be uncompressed and unencrypted and must not be sparse.
 Resolve: go to C:\Users\YOUR_USER\AppData\Local\Packages\CanonicalGroupLimited...
